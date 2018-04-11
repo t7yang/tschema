@@ -1,0 +1,20 @@
+{
+  "name": "tschema",
+  "version": "0.0.1",
+  "description": "A schema validator that able to correct wrong value",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "t7yang <t7yang@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.1",
+    "@types/ramda": "^0.25.21"
+  }
+}
