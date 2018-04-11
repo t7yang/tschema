@@ -48,7 +48,6 @@ export class SchemaVtor implements IHasErr, IFrom {
   }
 
   hasErr(testee: any = {}) {
-    console.log(this.hasNamedKeyErr(testee), this.hasUnnamedKeyErr(testee));
     return this.hasNamedKeyErr(testee) || this.hasUnnamedKeyErr(testee);
   }
 
