@@ -131,3 +131,4 @@ GitHub.sublime-settings
 node_modules
 
 *.stackdump
+*.tgz
