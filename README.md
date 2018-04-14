@@ -1,4 +1,4 @@
-# tschema
+# t7schema
 
 A schema validator that able check data and create a value from it. Inspired by TypeScript types system.
 
@@ -15,7 +15,7 @@ Pretty much same with TypeScript, support checking types including string, numbe
 How to create a type, validate, and create data from it:
 
 ```typescript
-import { type } from 'tschema';
+import { type } from 't7schema';
 
 const myType = type({
   type: 'string',
@@ -31,7 +31,7 @@ myType.from('appl'); // orange, error, so fallback to default
 Schema can do exactly the same thing:
 
 ```typescript
-import { type, schema } from 'tschema';
+import { type, schema } from 't7schema';
 
 const mySchema = schema({
   role: type({

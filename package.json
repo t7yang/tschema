@@ -1,5 +1,5 @@
 {
-  "name": "tschema",
+  "name": "t7schema",
   "version": "0.0.1",
   "description": "A schema validator that able to correct wrong value",
   "main": "index.js",
