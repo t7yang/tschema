@@ -2,10 +2,12 @@
   "name": "t7schema",
   "version": "0.0.1",
   "description": "A schema validator that able to correct wrong value",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "tsc --noEmit",
-    "build": "tsc"
+    "build": "tsc",
+    "upgrade": "yarn upgradeInteractive --latest"
   },
   "keywords": [],
   "author": "t7yang <t7yang@gmail.com>",
@@ -14,7 +16,7 @@
     "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "@types/node": "^9.6.1",
-    "@types/ramda": "^0.25.21"
+    "@types/node": "^9.6.6",
+    "@types/ramda": "^0.25.24"
   }
 }
