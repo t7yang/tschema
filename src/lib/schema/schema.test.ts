@@ -35,7 +35,7 @@ const obj = {
   author3: 'felix',
 };
 
-export const DictionarySchema = schema({
+const DictionarySchema = schema({
   default: schema({
     s2t: schema({
       char: type({
