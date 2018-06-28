@@ -1,5 +1,4 @@
 import { isNil } from 'ramda';
-
 import { BasicType } from './type/type.interface';
 
 export function isArray(value: any): boolean {
@@ -29,16 +28,16 @@ export function isType(type: BasicType, value: any): boolean {
   }
 }
 
-export function isMin(min: number, value: any): boolean {
+export function isMin(min: number, value: number | string | any[]): boolean {
   return isType('number', value)
     ? (value as number) >= min
-    : 'length' in value ? value.length >= min : false;
+    : (value as string | any[]).length >= min;
 }
 
-export function isMax(max: number, value: any): boolean {
+export function isMax(max: number, value: number | string | any[]): boolean {
   return isType('number', value)
     ? (value as number) <= max
-    : 'length' in value ? value.length <= max : false;
+    : (value as string | any[]).length <= max;
 }
 
 export function isPattern(regexp: RegExp, value: string) {
