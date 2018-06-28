@@ -1,6 +1,6 @@
 {
-  "name": "t7schema",
-  "version": "0.0.2",
+  "name": "tschema",
+  "version": "0.0.3",
   "description": "A schema validator that able to correct wrong value",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -17,6 +17,6 @@
   },
   "devDependencies": {
     "@types/node": "^9.6.6",
-    "@types/ramda": "^0.25.24"
+    "@types/ramda": "^0.25.32"
   }
 }
